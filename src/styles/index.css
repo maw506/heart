@@ -51,12 +51,6 @@ body {
   z-index: 1;
 }
 
-@media screen and (max-width: 400px) {
-  .heart-container {
-    padding-left: 120px;
-  }
-}
-
 .subtext-container {
   position: relative;
   z-index: 2;
@@ -101,5 +95,11 @@ body {
   }
   100% {
     transform: rotate(45deg) scale(0.8);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .heart-container {
+    padding-left: 120px;
   }
 }
