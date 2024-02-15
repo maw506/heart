@@ -51,7 +51,7 @@ body {
   z-index: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .heart-container {
     padding-left: 120px;
   }
@@ -103,5 +103,3 @@ body {
     transform: rotate(45deg) scale(0.8);
   }
 }
-
-
