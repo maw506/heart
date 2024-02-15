@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b1522;
+  color: #fff;
+}
+
+.rosa-content {
+  padding: 20px;
+}
+
+.rosa-text {
+  color: #ff69b4 !important;
+}
+
+.rosa-btn {
+  background-color: #ff69b4 !important;
+  padding: 15px 100px;
+  color: #ffff !important;
+}
+
+.rosa-text-container {
+  color: #ff69b4 !important;
+}
+
+.rosa-icon-container {
+  color: #b11c66 !important;
+  margin: 30px !important;
+  font-size: 100px !important;
+}
+
+.container {
+  position: relative;
+}
+
+.text-container {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 150px;
+  margin-top: 100px;
+}
+
+.heart-container {
+  padding-left: 570px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.subtext-container {
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.heart {
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  position: relative;
+  transform: rotate(45deg);
+  box-shadow: -20px 20px 150px red;
+  animation: latido 0.5s linear infinite alternate;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background: red;
+  border-radius: 50%;
+  box-shadow: 20px 20px 150px #f20044;
+}
+
+.heart::before {
+  right: 50%;
+}
+
+.heart::after {
+  top: -50%;
+}
+
+@keyframes latido {
+  0% {
+    transform: rotate(45deg) scale(1.1);
+  }
+  80% {
+    transform: rotate(45deg) scale(1);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.8);
+  }
+}

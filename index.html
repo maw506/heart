@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="src/media/corazon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="src/styles/index.css" />
+    <title>Para Lucas</title>
+  </head>
+  <body>
+    <div class="container">
+      <article class="text-container">
+        <h1 class="text-center">¡Feliz San Valentin!</h1>
+      </article>
+      <article class="heart-container">
+        <div class="heart" onclick="mostrarAlerta()"></div>
+      </article>
+
+      <article class="subtext-container">
+        <h1 class="text-center">LUKII TE AMO</h1>
+        <h2 class="text-center">Con todo el corazoncito</h2>
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <button class="btn btn-danger" onclick="showAlert()">
+              CLICK AQUI
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="src/js/index.js"></script>
+    </div>
+  </body>
+</html>
