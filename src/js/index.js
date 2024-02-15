@@ -52,12 +52,17 @@ function mostrarAlerta() {
 
 function showAlert() {
   Swal.fire({
-    icon: "",
+    icon: "question",
     title: "",
     html: `
-    <p class="mb-4 mt-5">Queria hacerte una tarjetita mas original, y como programo todo el dia, se me ocurrio estoo</p>
-    <h2 class="mb-4 mt-5"><b>Hace click en el corazoncito</b></h2>
+    <p class="mb-4 mt-2">Queria hacerte una tarjetita mas original, y como programo todo el dia, se me ocurrio estoo</p>
+    <h2 class="mb-4 mt-3"><b>Hace click en el corazoncito</b></h2>
     `,
+    customClass: {
+      content: "rosa-content",
+      confirmButton: "rosa-btn",
+      cancelButton: "rosa-btn",
+    },
     showCancelButton: false,
   });
 }
